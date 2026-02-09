@@ -1,1 +1,25 @@
-# WideAwake
+<p align="center">
+  <img src="assets/logo.jpeg" alt="WideAwake Logo" width="128">
+</p>
+
+# ☕ WideAwake
+
+A lightweight Windows utility that prevents your computer from sleeping, locking, or turning off the screen. Inspired by Caffeine, yet instead of simulating keyboard clicks it pings the Windows API.
+
+## How it Works
+WideAwake communicates directly with the Windows Kernel using the `SetThreadExecutionState` API. It tells the system that the display and the system are currently required, effectively pausing the idle timer.
+
+## Installation / Usage
+1. Download the latest `WideAwake.exe`
+2. Double-click the file to run it.
+3. Icon should appear in the app tray 
+
+## Building from Source
+If you want to build the `.exe` yourself:
+1. Install the [.NET 8.0 SDK](https://dotnet.microsoft.com/download).
+2. Clone this repo.
+3. Run the following command in the project folder:
+   ```powershell
+   dotnet publish -c Release -r win-x64
+   ```
+4. The app should be ready under ```bin/Release/net8.0-windows/win-x64/publish/```
