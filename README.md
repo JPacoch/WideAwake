@@ -1,7 +1,7 @@
 # ☕ WideAwake
 
 <p align="center">
-  <img src="assets/logo.jpeg" alt="WideAwake Logo" width="512">
+  <img src="assets/favicon.png" alt="WideAwake Logo" width="512">
 </p>
 
 A lightweight Windows utility that prevents your computer from sleeping, locking, or turning off the screen. Inspired by Caffeine, it pings the Windows API and simulates mouse movement in order to stay online with the OS and other apps running in the background.
